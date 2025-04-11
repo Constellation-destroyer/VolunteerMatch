@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works | volunteermatch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FF5A5F;
+      margin-right: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    nav ul li:hover,
+    nav ul li.active {
+      color:#FF5A5F;
+    }
+
+    .container {
+      padding: 2rem 4%;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .steps {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .step {
+      margin-bottom: 1.5rem;
+    }
+
+    .step h3 {
+      margin-bottom: 0.5rem;
+      color: #FF5A5F;
+    }
+
+    .step p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <i class="fas fa-hand-holding-heart"></i>
+        VolunteerMatch
+    </div>
+    <ul>
+      <li onclick="navigate('index.html')">Home</li>
+      <li onclick="navigate('findOpportunities.html')">Find Opportunities</li>
+      <li onclick="navigate('organizations.html')">Organizations</li>
+      <li class="active" onclick="navigate('how.html')">How It Works</li>
+      <li onclick="navigate('about.html')">About Us</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Browse Opportunities</h3>
+        <p>Use our platform to explore volunteer opportunities that match your interests, skills, and location.</p>
+      </div>
+      <div class="step">
+        <h3>2. Connect with Organizations</h3>
+        <p>Reach out to verified non-profits and organizations that resonate with your values and causes.</p>
+      </div>
+      <div class="step">
+        <h3>3. Make an Impact</h3>
+        <p>Start volunteering, track your contributions, and make a real difference in your community and beyond.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function navigate(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

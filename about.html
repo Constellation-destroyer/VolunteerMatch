@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | volunteermatch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FF5A5F;
+      margin-right: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    nav ul li:hover,
+    nav ul li.active {
+      color: #FF5A5F;
+    }
+
+    .container {
+      padding: 2rem 4%;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .team {
+      margin-top: 2rem;
+    }
+
+    .team h3 {
+      color: #FF5A5F;
+      margin-bottom: 0.5rem;
+    }
+
+    .team p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <i class="fas fa-hand-holding-heart"></i>
+      VolunteerMatch
+    </div>
+    <ul>
+      <li onclick="navigate('index.html')">Home</li>
+      <li onclick="navigate('findOpportunities.html')">Find Opportunities</li>
+      <li onclick="navigate('organizations.html')">Organizations</li>
+      <li onclick="navigate('how.html')">How It Works</li>
+      <li class="active" onclick="navigate('about.html')">About Us</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="content">
+      <p><strong>volunteermatch</strong> is a platform dedicated to bridging the gap between enthusiastic volunteers and organizations in need. Our mission is to make volunteering simple, accessible, and impactful for everyone.</p>
+
+      <div class="team">
+        <h3>Our Team</h3>
+        <p>We’re a passionate group of developers, designers, and changemakers who believe in the power of giving back. Together, we’re creating a space where people can connect over shared causes and create meaningful change.</p>
+      </div>
+
+      <div class="team">
+        <h3>Why We Exist</h3>
+        <p>Finding volunteer opportunities shouldn’t be hard. We believe in using technology for good — to connect people to causes that matter and organizations to people who care.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function navigate(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
